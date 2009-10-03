@@ -1,0 +1,19 @@
+<project name="megahal" default="jar">
+
+    <target name="compile">
+        <mkdir dir="build/classes"/>
+        <javac srcdir="src/main" destdir="build/classes"/>
+    </target>
+
+    <target name="jar" depends="compile">
+        <jar jarfile="build/megahal.jar" basedir="build/classes">
+            <manifest>
+                <attribute name="Main-Class" value="org.trypticon.megahal.Main"/>
+            </manifest>
+        </jar>
+    </target>
+
+    <target name="clean">
+        <delete dir="build"/>
+    </target>
+</project>

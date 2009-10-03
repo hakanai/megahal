@@ -1,3 +1,13 @@
 
 A basic Java implementation of MegaHAL.  Licence is GPLv3 until decided otherwise.
 
+Compiling:
+
+  Just run ant from the base directory.
+
+Running:
+
+  From the base directory:
+
+    java -jar build/megahal.jar 
+
